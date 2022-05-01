@@ -1,9 +1,15 @@
 
 import { FC } from 'react';
+import { Button, ButtonGroup } from '@chakra-ui/react'
 
 const Index: FC = () => {
   return (
-    <div>Hallo World!!</div>
+    <div>
+      <ButtonGroup variant='outline' spacing='6'>
+        <Button colorScheme='blue'>Save</Button>
+        <Button>Cancel</Button>
+      </ButtonGroup>
+    </div>
   );
 };
 
