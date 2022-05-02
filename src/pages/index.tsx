@@ -18,7 +18,7 @@ import {
 
 const Index: FC = () => {
   const [value, setValue] = useState('');
-  const {ipadicFeatures, getKuromoji} = useKuromoji()
+  const {ipadicFeatures, getKuromoji, isLoading} = useKuromoji()
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) =>
     setValue(event.target.value);
@@ -49,6 +49,7 @@ const Index: FC = () => {
               colorScheme="teal"
               variant="solid"
               width="200px"
+              isLoading={isLoading}
             >
               解析
             </Button>
